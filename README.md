@@ -1,4 +1,4 @@
-# Auto_Encoder_classifier-_for_novels
+# Auto_Encoder_classifier_for_novels
 ｜背景：本プロジェクトは修士論文で扱う研究です。小説の語彙を単語ベクトルに変換することで、抽象的な雰囲気の変動が解析可能され、人気作品を抽出することが可能にされる。 
 ｜目標：作品のテキストだけで、人気作品を選び出すことで、販売直前の参考にできる。 ｜進捗：完成（部分成功：誤作動の場合あり） 
 ｜実装:pytorch, BERT ｜機材：google colab 
