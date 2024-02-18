@@ -6,4 +6,4 @@
 ｜インプット：作品テキスト 
 ｜アウトプット：インプット 
 ｜方法：Auto Encoderを高評価作品で訓練すると、高評価作品を入力すれば出力との損失が低く、低評価作品を入力すれば出力と入力の差ができ、損失が高くなる。この特徴を利用して、テキストから評価をどのグループに属するか予測する。 
-｜ファイル： 1.Narou_publish_data.py出版した作品を分析するためにAPIを通して情報収集するプログラムです。 2. metadata.py 作品のラベルデータをAPIを通して収集するプログラムです。 3. get_text.py 作品の内文をクローリングするプログラムです。 (Reference:https://github.com/kokokocococo555/crawling-scraping/tree/master/narouscraping)
+｜ファイル：2. metadata_by_ncode.py 作品のラベルデータをAPIを通して収集するプログラムです。 3. get_text.py 作品の内文をクローリングするプログラムです。 (Reference:https://github.com/kokokocococo555/crawling-scraping/tree/master/narouscraping)
