@@ -95,32 +95,6 @@ def get_main_text(bs_obj):
 
     return text
 
-def save_as_csv(stories, nc):
-    """
-    csvファイルにデータを保存
-    """
-    # バックアップファイルの保存先の指定
-    directory_name = "novels"
-    # ディレクトリが存在しなければ作成する
-    if not os.path.exists(directory_name):
-        os.makedirs(directory_name)
-
-    # ファイル名の作成
-    csv_name = os.path.join(directory_name, '{}.csv'.format(nc))
-
-    # 列名（1行目）を作成
-    col_name = ['No', 'title', 'url', 'date', 'text']
-
-    with open(csv_name, 'w', newline='', encoding='utf-8') as output_csv:
-        csv_writer = csv.writer(output_csv)
-        csv_writer.writerow(col_name) # 列名を記入
-
-        # csvに1行ずつ書き込み
-        for story in stories:
-            row_items = [story['No'], story['title'], story['url'], story['date'], story['text']]
-            csv_writer.writerow(row_items)
-
-    print(csv_name, ' saved...')
 
 
 
